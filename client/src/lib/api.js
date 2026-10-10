@@ -4,7 +4,10 @@ let accessToken = null;
 let refreshPromise = null;
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+    baseURL: import.meta.env.PROD
+        ? '/api' 
+        : import.meta.env.VITE_API_URL ||
+         'http://localhost:5000/api',
     timeout: 8000,
     withCredentials: true
 });

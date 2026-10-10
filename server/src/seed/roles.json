@@ -1,0 +1,183 @@
+﻿[
+  {
+    "slug":"frontend-developer",
+    "title":"Frontend Developer",
+    "description":"Build accessible, responsive interfaces and client-side web applications.",
+    "topics":["web","dsa","oop"],
+    "skills":[
+      {"name":"JavaScript","weight":5,"tier":"core"},
+      {"name":"HTML","weight":4,"tier":"core"},
+      {"name":"CSS","weight":4,"tier":"core"},
+      {"name":"React","weight":5,"tier":"core"},
+      {"name":"TypeScript","weight":3,"tier":"plus"},
+      {"name":"REST APIs","weight":3,"tier":"core"},
+      {"name":"Git","weight":2,"tier":"core"},
+      {"name":"Accessibility","weight":2,"tier":"plus"},
+      {"name":"Responsive Design","weight":3,"tier":"core"},
+      {"name":"Software Testing","weight":2,"tier":"plus"}
+    ]
+  },
+  {
+    "slug":"backend-developer",
+    "title":"Backend Developer",
+    "description":"Design APIs, application services, data models and reliable server-side systems.",
+    "topics":["web","sql","dbms","cn","os","dsa"],
+    "skills":[
+      {"name":"Node.js","weight":5,"tier":"core"},
+      {"name":"Express.js","weight":4,"tier":"core"},
+      {"name":"JavaScript","weight":3,"tier":"core"},
+      {"name":"REST APIs","weight":5,"tier":"core"},
+      {"name":"SQL","weight":4,"tier":"core"},
+      {"name":"MongoDB","weight":3,"tier":"core"},
+      {"name":"Database Design","weight":4,"tier":"core"},
+      {"name":"Git","weight":2,"tier":"core"},
+      {"name":"Security","weight":3,"tier":"plus"},
+      {"name":"Docker","weight":2,"tier":"plus"}
+    ]
+  },
+  {
+    "slug":"full-stack-developer",
+    "title":"Full-Stack Developer",
+    "description":"Work across frontend interfaces, backend APIs and database persistence.",
+    "topics":["web","sql","dbms","dsa","oop"],
+    "skills":[
+      {"name":"JavaScript","weight":5,"tier":"core"},
+      {"name":"React","weight":4,"tier":"core"},
+      {"name":"HTML","weight":3,"tier":"core"},
+      {"name":"CSS","weight":3,"tier":"core"},
+      {"name":"Node.js","weight":4,"tier":"core"},
+      {"name":"Express.js","weight":3,"tier":"core"},
+      {"name":"REST APIs","weight":4,"tier":"core"},
+      {"name":"SQL","weight":3,"tier":"core"},
+      {"name":"MongoDB","weight":3,"tier":"plus"},
+      {"name":"Git","weight":2,"tier":"core"}
+    ]
+  },
+  {
+    "slug":"data-analyst",
+    "title":"Data Analyst",
+    "description":"Query, clean, explore and communicate insights from structured data.",
+    "topics":["sql","dbms","aptitude"],
+    "skills":[
+      {"name":"SQL","weight":5,"tier":"core"},
+      {"name":"Excel","weight":4,"tier":"core"},
+      {"name":"Python","weight":3,"tier":"plus"},
+      {"name":"Statistics","weight":4,"tier":"core"},
+      {"name":"Data Visualization","weight":4,"tier":"core"},
+      {"name":"Power BI","weight":4,"tier":"plus"},
+      {"name":"Tableau","weight":3,"tier":"plus"},
+      {"name":"Pandas","weight":3,"tier":"plus"},
+      {"name":"Data Cleaning","weight":3,"tier":"core"},
+      {"name":"Communication","weight":2,"tier":"core"}
+    ]
+  },
+  {
+    "slug":"machine-learning-engineer",
+    "title":"Machine Learning Engineer",
+    "description":"Build, evaluate and operationalize machine-learning systems.",
+    "topics":["ml","dsa","sql","dbms"],
+    "skills":[
+      {"name":"Python","weight":5,"tier":"core"},
+      {"name":"Machine Learning","weight":5,"tier":"core"},
+      {"name":"Deep Learning","weight":4,"tier":"core"},
+      {"name":"PyTorch","weight":4,"tier":"plus"},
+      {"name":"TensorFlow","weight":3,"tier":"plus"},
+      {"name":"NumPy","weight":3,"tier":"core"},
+      {"name":"Pandas","weight":3,"tier":"core"},
+      {"name":"SQL","weight":3,"tier":"core"},
+      {"name":"Git","weight":2,"tier":"core"},
+      {"name":"Docker","weight":3,"tier":"plus"},
+      {"name":"Model Evaluation","weight":4,"tier":"core"}
+    ]
+  },
+  {
+    "slug":"data-scientist",
+    "title":"Data Scientist",
+    "description":"Use statistics, experimentation and machine learning to answer data questions.",
+    "topics":["ml","sql","dbms","aptitude"],
+    "skills":[
+      {"name":"Python","weight":5,"tier":"core"},
+      {"name":"Statistics","weight":5,"tier":"core"},
+      {"name":"Probability","weight":4,"tier":"core"},
+      {"name":"Machine Learning","weight":5,"tier":"core"},
+      {"name":"SQL","weight":4,"tier":"core"},
+      {"name":"Pandas","weight":4,"tier":"core"},
+      {"name":"NumPy","weight":3,"tier":"core"},
+      {"name":"Data Visualization","weight":3,"tier":"plus"},
+      {"name":"Experiment Design","weight":3,"tier":"plus"},
+      {"name":"Communication","weight":2,"tier":"core"}
+    ]
+  },
+  {
+    "slug":"devops-engineer",
+    "title":"DevOps Engineer",
+    "description":"Automate delivery and operate reliable deployment and infrastructure pipelines.",
+    "topics":["os","cn","web"],
+    "skills":[
+      {"name":"Linux","weight":5,"tier":"core"},
+      {"name":"Git","weight":3,"tier":"core"},
+      {"name":"Docker","weight":5,"tier":"core"},
+      {"name":"Kubernetes","weight":4,"tier":"plus"},
+      {"name":"CI/CD","weight":5,"tier":"core"},
+      {"name":"Cloud Computing","weight":4,"tier":"core"},
+      {"name":"Networking","weight":3,"tier":"core"},
+      {"name":"Terraform","weight":3,"tier":"plus"},
+      {"name":"Monitoring","weight":3,"tier":"plus"},
+      {"name":"Bash/Shell","weight":4,"tier":"core"}
+    ]
+  },
+  {
+    "slug":"qa-sdet-engineer",
+    "title":"QA/SDET Engineer",
+    "description":"Design reliable tests, automate quality checks and detect regressions.",
+    "topics":["dsa","oop","web","sql"],
+    "skills":[
+      {"name":"Software Testing","weight":5,"tier":"core"},
+      {"name":"Test Automation","weight":5,"tier":"core"},
+      {"name":"Python","weight":3,"tier":"plus"},
+      {"name":"JavaScript","weight":3,"tier":"plus"},
+      {"name":"API Testing","weight":4,"tier":"core"},
+      {"name":"SQL","weight":3,"tier":"core"},
+      {"name":"Git","weight":2,"tier":"core"},
+      {"name":"CI/CD","weight":3,"tier":"plus"},
+      {"name":"Selenium","weight":4,"tier":"plus"},
+      {"name":"Playwright","weight":4,"tier":"plus"}
+    ]
+  },
+  {
+    "slug":"software-engineer",
+    "title":"Software Engineer",
+    "description":"Solve engineering problems with data structures, maintainable code and tests.",
+    "topics":["dsa","oop","dbms","os","cn"],
+    "skills":[
+      {"name":"Data Structures & Algorithms","weight":5,"tier":"core"},
+      {"name":"Programming Fundamentals","weight":4,"tier":"core"},
+      {"name":"Object-Oriented Programming","weight":4,"tier":"core"},
+      {"name":"Git","weight":3,"tier":"core"},
+      {"name":"SQL","weight":3,"tier":"core"},
+      {"name":"Software Testing","weight":3,"tier":"core"},
+      {"name":"System Design","weight":3,"tier":"plus"},
+      {"name":"REST APIs","weight":3,"tier":"plus"},
+      {"name":"Debugging","weight":4,"tier":"core"},
+      {"name":"Problem Solving","weight":4,"tier":"core"}
+    ]
+  },
+  {
+    "slug":"cloud-engineer",
+    "title":"Cloud Engineer",
+    "description":"Build and operate cloud infrastructure with attention to reliability and security.",
+    "topics":["cn","os","dbms"],
+    "skills":[
+      {"name":"Cloud Computing","weight":5,"tier":"core"},
+      {"name":"AWS","weight":4,"tier":"plus"},
+      {"name":"Microsoft Azure","weight":3,"tier":"plus"},
+      {"name":"Linux","weight":4,"tier":"core"},
+      {"name":"Networking","weight":4,"tier":"core"},
+      {"name":"Docker","weight":3,"tier":"plus"},
+      {"name":"Kubernetes","weight":3,"tier":"plus"},
+      {"name":"Security","weight":4,"tier":"core"},
+      {"name":"Terraform","weight":4,"tier":"plus"},
+      {"name":"Monitoring","weight":3,"tier":"core"}
+    ]
+  }
+]

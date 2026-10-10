@@ -1,4 +1,4 @@
-﻿import {
+import {
     createContext,
     useCallback,
     useContext,
@@ -69,6 +69,10 @@ export function AuthProvider({ children }) {
         return data.user;
     }, []);
 
+    const updateUser = useCallback((updated) => {
+        setUser(current => current ? { ...current, ...updated } : updated);
+    }, []);
+
     const signOut = useCallback(async () => {
         try {
             await api.post('/auth/logout');
@@ -83,8 +87,9 @@ export function AuthProvider({ children }) {
         loading,
         signIn,
         signUp,
-        signOut
-    }), [user, loading, signIn, signUp, signOut]);
+        signOut,
+        updateUser
+    }), [user, loading, signIn, signUp, signOut, updateUser]);
 
     return (
         <AuthContext.Provider value={value}>

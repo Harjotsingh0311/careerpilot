@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, GraduationCap, ShieldCheck, Sparkles } from 'lucide-react';
 import { useAuth } from './AuthContext';
@@ -27,7 +27,7 @@ export default function AuthPage({ mode = 'login' }) {
                 await signIn({ email, password });
             }
 
-            const requestedPath = location.state?.from?.pathname || '/';
+            const requestedPath = isRegister ? '/onboarding' : (location.state?.from?.pathname || '/');
             navigate(requestedPath, { replace: true });
         } catch (requestError) {
             const apiError = requestError.response?.data?.error;

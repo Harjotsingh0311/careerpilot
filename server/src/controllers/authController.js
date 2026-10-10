@@ -1,4 +1,4 @@
-﻿import { createHash, randomBytes, randomUUID } from 'node:crypto';
+import { createHash, randomBytes, randomUUID } from 'node:crypto';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
@@ -23,7 +23,9 @@ function publicUser(user) {
     return {
         id: user._id.toString(),
         displayName: user.displayName,
-        email: user.email
+        email: user.email,
+        college: user.college ?? '',
+        gradYear: user.gradYear ?? null
     };
 }
 

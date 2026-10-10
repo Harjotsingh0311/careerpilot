@@ -33,7 +33,21 @@ const envSchema = z.object({
         ),
 
     JWT_ACCESS_SECRET: z.string()
-        .min(32, 'JWT_ACCESS_SECRET must contain at least 32 characters')
+        .min(32, 'JWT_ACCESS_SECRET must contain at least 32 characters'),
+
+    GROQ_API_KEY: z.string().default(''),
+
+    GROQ_MODEL_MAIN: z.string()
+        .default('openai/gpt-oss-120b'),
+
+    GROQ_MODEL_FALLBACK: z.string()
+        .default('openai/gpt-oss-20b'),
+
+    AI_CALLS_PER_USER_PER_DAY: z.coerce.number()
+        .int()
+        .min(1)
+        .max(500)
+        .default(40)
 });
 
 const result = envSchema.safeParse(process.env);

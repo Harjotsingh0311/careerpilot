@@ -25,6 +25,11 @@ const skillSchema = new mongoose.Schema({
         enum: ['Beginner', 'Basic', 'Intermediate', 'Advanced', 'Expert'],
         default: 'Beginner'
     },
+    level: {
+        type: Number,
+        min: 1,
+        max: 5
+    },
     yearsExperience: {
         type: Number,
         min: 0,
@@ -46,7 +51,11 @@ const skillProfileSchema = new mongoose.Schema({
             trim: true,
             maxlength: 100
         }],
-        default: []
+        default: [],
+        validate: {
+            validator: values => values.length <= 3,
+            message: 'A maximum of three target roles is allowed.'
+        }
     },
     skills: {
         type: [skillSchema],

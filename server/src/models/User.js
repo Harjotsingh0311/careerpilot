@@ -1,4 +1,4 @@
-﻿import mongoose from 'mongoose';
+import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
     displayName: {
@@ -15,6 +15,8 @@ const userSchema = new mongoose.Schema({
         trim: true,
         maxlength: 254
     },
+    college: { type: String, trim: true, maxlength: 120 },
+    gradYear: { type: Number, min: 2020, max: 2100 },
     passwordHash: {
         type: String,
         required: true,
@@ -30,4 +32,3 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.models.User || mongoose.model('User', userSchema);
 
 export default User;
-

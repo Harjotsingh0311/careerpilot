@@ -1,23 +1,31 @@
-﻿import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
 import { useAuth } from './auth/AuthContext'
-import SkillProfilePage from './features/SkillProfilePage'
-import AssessmentPage from './features/AssessmentPage'
+const SkillProfilePage = lazy(() => import('./features/SkillProfilePage'))
+const AssessmentPage = lazy(() => import('./features/AssessmentPage'))
+const DashboardInsights = lazy(() => import('./features/DashboardInsights'))
+const RoleMatchesPage = lazy(() => import('./features/RoleMatchesPage'))
+const ResumeLabPage = lazy(() => import('./features/ResumeLabPage'))
+const OnboardingPage = lazy(() => import('./features/OnboardingPage'))
+const InterviewStudioPage = lazy(() => import('./features/InterviewStudioPage'))
+const VoiceLabPage = lazy(() => import('./features/VoiceLabPage'))
 import {
   Activity, ArrowRight, ArrowUpRight, BookOpen, BrainCircuit,
   BriefcaseBusiness, CheckCircle2, ChevronRight, FileSearch,
-  GraduationCap, LayoutDashboard, LogOut, Menu, MessageSquareText,
+  GraduationCap, LayoutDashboard, LogOut, Menu, MessageSquareText, Mic,
   ShieldCheck, Sparkles, Target, X,
 } from 'lucide-react'
 import { getHealth } from './lib/api'
 
 const navigation = [
   { label: 'Overview', path: '/', icon: LayoutDashboard, end: true },
+  { label: 'Onboarding', path: '/onboarding', icon: GraduationCap },
   { label: 'Skill profile', path: '/skills', icon: BrainCircuit },
   { label: 'Assessments', path: '/assessments', icon: Target },
   { label: 'Role matcher', path: '/roles', icon: BriefcaseBusiness },
   { label: 'Resume lab', path: '/resume', icon: FileSearch },
   { label: 'Interview studio', path: '/interview', icon: MessageSquareText },
+  { label: 'Voice lab', path: '/voice', icon: Mic },
 ]
 
 const modules = [
@@ -207,28 +215,7 @@ function Dashboard({ health }) {
       </section>
 
       <section>
-        <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
-          <div>
-            <h2 className="text-lg font-bold tracking-tight text-slate-900">Your starting point</h2>
-            <p className="mt-1 text-sm text-slate-500">Your personal metrics appear as you use CareerPilot.</p>
-          </div>
-          <HealthStatus health={health} />
-        </div>
-
-        <div className="grid gap-4 md:grid-cols-3">
-          {stats.map(({ label, value, note, icon: Icon, iconStyle }) => (
-            <div key={label} className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-sm shadow-slate-100">
-              <div className="flex items-start justify-between gap-3">
-                <p className="text-sm font-medium text-slate-500">{label}</p>
-                <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${iconStyle}`}>
-                  <Icon size={20} />
-                </div>
-              </div>
-              <p className="mt-4 text-xl font-bold tracking-tight text-slate-900">{value}</p>
-              <p className="mt-2 text-xs leading-5 text-slate-500">{note}</p>
-            </div>
-          ))}
-        </div>
+        <DashboardInsights />
       </section>
 
       <section>
@@ -391,15 +378,17 @@ function AppLayout() {
         </header>
 
         <main className="mx-auto w-full max-w-7xl px-4 py-7 sm:px-8 sm:py-9">
-          <Routes>
+          <Suspense fallback={<div className="rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-500">Loading module...</div>}><Routes>
             <Route path="/" element={<Dashboard health={health} />} />
+            <Route path="/onboarding" element={<OnboardingPage />} />
             <Route path="/skills" element={<SkillProfilePage />} />
             <Route path="/assessments" element={<AssessmentPage />} />
-            <Route path="/roles" element={<ModulePage title="Role matcher" icon={BriefcaseBusiness} description="Compare your skill profile against career roles and understand the gaps to close." />} />
-            <Route path="/resume" element={<ModulePage title="Resume lab" icon={FileSearch} description="Review a resume alongside a job description and identify relevant improvements." />} />
-            <Route path="/interview" element={<ModulePage title="Interview studio" icon={MessageSquareText} description="Prepare for job-specific interview practice and structured feedback." />} />
+            <Route path="/roles" element={<RoleMatchesPage />} />
+            <Route path="/resume" element={<ResumeLabPage />} />
+            <Route path="/interview" element={<InterviewStudioPage />} />
+            <Route path="/voice" element={<VoiceLabPage />} />
             <Route path="*" element={<ModulePage title="Page not found" icon={BookOpen} description="This page does not exist in the current workspace." />} />
-          </Routes>
+          </Routes></Suspense>
         </main>
       </div>
     </div>
@@ -409,6 +398,3 @@ function AppLayout() {
 export default function Workspace() {
   return <AppLayout />
 }
-
-
-

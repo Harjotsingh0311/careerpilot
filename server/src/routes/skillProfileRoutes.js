@@ -1,5 +1,6 @@
-﻿import express from 'express';
+import express from 'express';
 import {
+    getCatalog,
     getSkillProfile,
     saveSkillProfile
 } from '../controllers/skillProfileController.js';
@@ -10,6 +11,7 @@ import { skillProfileSchema } from '../utils/skillProfileSchemas.js';
 const router = express.Router();
 
 router.use(requireAuth);
+router.get('/catalog', getCatalog);
 
 router.get('/profile', getSkillProfile);
 router.put('/profile', validateBody(skillProfileSchema), saveSkillProfile);

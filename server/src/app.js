@@ -1,4 +1,4 @@
-﻿import express from 'express';
+import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
@@ -8,6 +8,12 @@ import { getDatabaseStatus } from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import skillProfileRoutes from './routes/skillProfileRoutes.js';
 import assessmentRoutes from './routes/assessmentRoutes.js';
+import dashboardRoutes from './routes/dashboardRoutes.js';
+import roleRoutes from './routes/roleRoutes.js';
+import userRoutes from './routes/userRoutes.js';
+import documentRoutes from './routes/documentRoutes.js';
+import voiceRoutes from './routes/voiceRoutes.js';
+import interviewRoutes from './routes/interviewRoutes.js';
 
 const app = express();
 
@@ -46,6 +52,12 @@ app.get('/api/health', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/skills', skillProfileRoutes);
 app.use('/api/assessment', assessmentRoutes);
+app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/roles', roleRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/documents', documentRoutes);
+app.use('/api/voice', voiceRoutes);
+app.use('/api/interviews', interviewRoutes);
 
 app.use((req, res) => {
     res.status(404).json({
@@ -85,5 +97,3 @@ app.use((error, req, res, next) => {
 });
 
 export default app;
-
-

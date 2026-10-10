@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
     ArrowLeft,
     BrainCircuit,
@@ -48,6 +48,7 @@ function normaliseSkill(skill, index) {
         name: skill.name || '',
         category: skill.category || 'Other',
         proficiency: skill.proficiency || 'Beginner',
+        level: skill.level ?? ({ Beginner: 1, Basic: 2, Intermediate: 3, Advanced: 4, Expert: 5 }[skill.proficiency] || 3),
         yearsExperience: String(skill.yearsExperience ?? 0)
     };
 }
@@ -124,7 +125,7 @@ export default function SkillProfilePage() {
             .map(role => role.trim())
             .filter(Boolean);
 
-        if (roles.length > 5) {
+        if (roles.length > 3) {
             setError('Add no more than five target roles.');
             return;
         }
@@ -215,7 +216,7 @@ export default function SkillProfilePage() {
                 <section className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
                     <h2 className="text-lg font-bold text-slate-900">Career direction</h2>
                     <p className="mt-1 text-sm leading-5 text-slate-500">
-                        Add up to five roles, separated by commas.
+                        Add up to three roles, separated by commas.
                     </p>
 
                     <div className="mt-5">

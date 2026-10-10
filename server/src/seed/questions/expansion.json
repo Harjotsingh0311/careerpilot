@@ -1,0 +1,2270 @@
+[
+  {
+    "seedKey": "dsa-linked-lists-easy-expansion-01",
+    "topic": "dsa",
+    "subtopic": "Linked lists",
+    "difficulty": "easy",
+    "text": "What is the time complexity of inserting a new node at the head of a singly linked list when the head pointer is available?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Only the new node and head pointer need to be updated; the list does not need to be traversed.",
+    "tags": [
+      "linked-lists"
+    ]
+  },
+  {
+    "seedKey": "dsa-queues-easy-expansion-02",
+    "topic": "dsa",
+    "subtopic": "Queues",
+    "difficulty": "easy",
+    "text": "Which data structure is typically used by breadth-first search to visit vertices level by level?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Binary search tree",
+      "Hash set only"
+    ],
+    "correctIndex": 1,
+    "explanation": "BFS processes discovered vertices in first-in, first-out order, which a queue provides.",
+    "tags": [
+      "queues"
+    ]
+  },
+  {
+    "seedKey": "dsa-sorting-easy-expansion-03",
+    "topic": "dsa",
+    "subtopic": "Sorting",
+    "difficulty": "easy",
+    "text": "Which sorting algorithm repeatedly selects the smallest remaining element and places it at the next position?",
+    "options": [
+      "Selection sort",
+      "Merge sort",
+      "Heap sort",
+      "Counting sort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Selection sort repeatedly finds the minimum item in the unsorted suffix and swaps it into place.",
+    "tags": [
+      "sorting"
+    ]
+  },
+  {
+    "seedKey": "dsa-trees-easy-expansion-04",
+    "topic": "dsa",
+    "subtopic": "Trees",
+    "difficulty": "easy",
+    "text": "In a binary search tree with distinct keys, which property holds for every node?",
+    "options": [
+      "Every node has exactly two children",
+      "Keys in the left subtree are smaller and those in the right subtree are larger",
+      "The tree is always complete",
+      "Leaves must have equal depth"
+    ],
+    "correctIndex": 1,
+    "explanation": "The binary search tree ordering property places smaller keys left and larger keys right of each node.",
+    "tags": [
+      "trees"
+    ]
+  },
+  {
+    "seedKey": "dsa-hash-tables-medium-expansion-05",
+    "topic": "dsa",
+    "subtopic": "Hash tables",
+    "difficulty": "medium",
+    "text": "For a well-distributed hash table with controlled load factor, what is the expected time complexity of lookup?",
+    "options": [
+      "O(1)",
+      "O(log n) always",
+      "O(n log n)",
+      "O(n squared)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hash lookup is expected constant time under suitable hashing and load-factor assumptions; worst-case collisions can be linear.",
+    "tags": [
+      "hash-tables"
+    ]
+  },
+  {
+    "seedKey": "dsa-sorting-medium-expansion-06",
+    "topic": "dsa",
+    "subtopic": "Sorting",
+    "difficulty": "medium",
+    "text": "What is the worst-case time complexity of merge sort on an array of n elements?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n squared)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Merge sort divides the input into logarithmic levels and performs linear merging work at each level.",
+    "tags": [
+      "sorting"
+    ]
+  },
+  {
+    "seedKey": "dsa-graphs-medium-expansion-07",
+    "topic": "dsa",
+    "subtopic": "Graphs",
+    "difficulty": "medium",
+    "text": "For an unweighted graph, which algorithm finds a shortest path in number of edges from a source to every reachable vertex?",
+    "options": [
+      "Depth-first search without modification",
+      "Breadth-first search",
+      "Prim’s algorithm",
+      "Topological sort on any graph"
+    ],
+    "correctIndex": 1,
+    "explanation": "BFS explores vertices by increasing distance in edges, so the first discovery of a vertex gives a shortest unweighted path.",
+    "tags": [
+      "graphs"
+    ]
+  },
+  {
+    "seedKey": "dsa-sorting-medium-expansion-08",
+    "topic": "dsa",
+    "subtopic": "Sorting",
+    "difficulty": "medium",
+    "text": "A stable sorting algorithm guarantees what?",
+    "options": [
+      "It always uses O(1) extra memory",
+      "Equal-key items retain their original relative order",
+      "It is always faster than an unstable sort",
+      "It sorts data without comparisons in every case"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stability preserves the relative order of records whose sort keys compare equal.",
+    "tags": [
+      "sorting"
+    ]
+  },
+  {
+    "seedKey": "dsa-cycle-detection-medium-expansion-09",
+    "topic": "dsa",
+    "subtopic": "Cycle detection",
+    "difficulty": "medium",
+    "text": "Floyd’s tortoise-and-hare algorithm detects a cycle in a linked list using which time and extra-space bounds?",
+    "options": [
+      "O(n) time and O(1) extra space",
+      "O(log n) time and O(n) extra space",
+      "O(n squared) time and O(1) extra space",
+      "O(1) time and O(n) extra space"
+    ],
+    "correctIndex": 0,
+    "explanation": "Two pointers moving at different speeds can meet inside a cycle; the algorithm takes linear time and constant extra space.",
+    "tags": [
+      "cycle-detection"
+    ]
+  },
+  {
+    "seedKey": "dsa-dynamic-programming-medium-expansion-10",
+    "topic": "dsa",
+    "subtopic": "Dynamic programming",
+    "difficulty": "medium",
+    "text": "Which property is a common reason a problem can benefit from dynamic programming?",
+    "options": [
+      "Every input is already sorted",
+      "Overlapping subproblems and optimal substructure",
+      "All values must be unique",
+      "The answer must be a graph"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dynamic programming reuses solutions to repeated subproblems and combines them according to an optimal-substructure relationship.",
+    "tags": [
+      "dynamic-programming"
+    ]
+  },
+  {
+    "seedKey": "dsa-heaps-hard-expansion-11",
+    "topic": "dsa",
+    "subtopic": "Heaps",
+    "difficulty": "hard",
+    "text": "After building a binary max-heap, what is the worst-case time complexity of extracting its maximum element once?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 1,
+    "explanation": "The root maximum is removed, the last element replaces it, and heapify travels at most the tree height, which is logarithmic.",
+    "tags": [
+      "heaps"
+    ]
+  },
+  {
+    "seedKey": "dsa-sorting-hard-expansion-12",
+    "topic": "dsa",
+    "subtopic": "Sorting",
+    "difficulty": "hard",
+    "text": "What is the worst-case time complexity of standard quicksort when each pivot repeatedly creates highly unbalanced partitions?",
+    "options": [
+      "O(n log n)",
+      "O(log n)",
+      "O(n squared)",
+      "O(n)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Repeated partitions of sizes 0 and n−1 yield quadratic work across recursive calls.",
+    "tags": [
+      "sorting"
+    ]
+  },
+  {
+    "seedKey": "dsa-shortest-paths-hard-expansion-13",
+    "topic": "dsa",
+    "subtopic": "Shortest paths",
+    "difficulty": "hard",
+    "text": "Dijkstra’s shortest-path algorithm relies on which important condition about edge weights?",
+    "options": [
+      "All edges must have weight 1",
+      "Edge weights must be non-negative",
+      "The graph must be a tree",
+      "The graph must be complete"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dijkstra finalizes vertices greedily and is correct with non-negative edge weights; negative edges can invalidate that choice.",
+    "tags": [
+      "shortest-paths"
+    ]
+  },
+  {
+    "seedKey": "dsa-directed-acyclic-graphs-hard-expansion-14",
+    "topic": "dsa",
+    "subtopic": "Directed acyclic graphs",
+    "difficulty": "hard",
+    "text": "A topological ordering exists for which type of directed graph?",
+    "options": [
+      "Every directed graph",
+      "Only complete directed graphs",
+      "A directed acyclic graph",
+      "Only graphs with one vertex"
+    ],
+    "correctIndex": 2,
+    "explanation": "A DAG admits a linear ordering in which each directed edge points forward; a directed cycle makes such an order impossible.",
+    "tags": [
+      "directed-acyclic-graphs"
+    ]
+  },
+  {
+    "seedKey": "dbms-keys-easy-expansion-01",
+    "topic": "dbms",
+    "subtopic": "Keys",
+    "difficulty": "easy",
+    "text": "What is the main purpose of a foreign key constraint?",
+    "options": [
+      "To encrypt a column",
+      "To enforce a relationship to a referenced key",
+      "To automatically sort all rows",
+      "To guarantee every query uses an index"
+    ],
+    "correctIndex": 1,
+    "explanation": "A foreign key enforces referential integrity between related tables.",
+    "tags": [
+      "keys"
+    ]
+  },
+  {
+    "seedKey": "dbms-sql-aggregates-easy-expansion-02",
+    "topic": "dbms",
+    "subtopic": "SQL aggregates",
+    "difficulty": "easy",
+    "text": "In SQL, what does COUNT(*) count?",
+    "options": [
+      "Only rows where every column is non-NULL",
+      "All rows in the selected group or result",
+      "Only distinct rows",
+      "Only rows with a numeric primary key"
+    ],
+    "correctIndex": 1,
+    "explanation": "COUNT(*) counts rows regardless of NULL values in individual columns.",
+    "tags": [
+      "sql-aggregates"
+    ]
+  },
+  {
+    "seedKey": "dbms-transactions-easy-expansion-03",
+    "topic": "dbms",
+    "subtopic": "Transactions",
+    "difficulty": "easy",
+    "text": "Which ACID property means that committed changes survive a subsequent system failure, subject to the database’s durability guarantees?",
+    "options": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ],
+    "correctIndex": 3,
+    "explanation": "Durability requires committed transaction results to persist beyond the transaction and survive supported failures.",
+    "tags": [
+      "transactions"
+    ]
+  },
+  {
+    "seedKey": "dbms-normalisation-easy-expansion-04",
+    "topic": "dbms",
+    "subtopic": "Normalisation",
+    "difficulty": "easy",
+    "text": "Which normal-form principle requires each table cell to contain a single value from its domain rather than a repeating list of values?",
+    "options": [
+      "First normal form",
+      "Third normal form only",
+      "Fourth normal form only",
+      "Boyce–Codd normal form only"
+    ],
+    "correctIndex": 0,
+    "explanation": "First normal form requires attributes to contain atomic values and rows to be structured without repeating groups.",
+    "tags": [
+      "normalisation"
+    ]
+  },
+  {
+    "seedKey": "dbms-isolation-medium-expansion-05",
+    "topic": "dbms",
+    "subtopic": "Isolation",
+    "difficulty": "medium",
+    "text": "What is a non-repeatable read?",
+    "options": [
+      "A transaction reads the same row twice and sees different committed values",
+      "A query returns no rows",
+      "A table has no primary key",
+      "A transaction writes the same value twice within one statement"
+    ],
+    "correctIndex": 0,
+    "explanation": "A concurrent transaction updates a row between two reads, so the first transaction observes different values.",
+    "tags": [
+      "isolation"
+    ]
+  },
+  {
+    "seedKey": "dbms-indexes-medium-expansion-06",
+    "topic": "dbms",
+    "subtopic": "Indexes",
+    "difficulty": "medium",
+    "text": "Why can adding an index slow down INSERT and UPDATE operations?",
+    "options": [
+      "Indexes disable transactions",
+      "The database may also need to maintain the index entries",
+      "Indexes remove the primary key",
+      "Every write must scan the entire database by definition"
+    ],
+    "correctIndex": 1,
+    "explanation": "Index maintenance adds work and storage to writes, though indexes can make some reads much faster.",
+    "tags": [
+      "indexes"
+    ]
+  },
+  {
+    "seedKey": "dbms-concurrency-medium-expansion-07",
+    "topic": "dbms",
+    "subtopic": "Concurrency",
+    "difficulty": "medium",
+    "text": "Which problem occurs when two transactions overwrite each other’s changes because each read an older value?",
+    "options": [
+      "Lost update",
+      "Phantom read only",
+      "Dirty schema",
+      "Dead code"
+    ],
+    "correctIndex": 0,
+    "explanation": "A lost update occurs when one transaction’s write unintentionally replaces another transaction’s update.",
+    "tags": [
+      "concurrency"
+    ]
+  },
+  {
+    "seedKey": "dbms-functional-dependencies-medium-expansion-08",
+    "topic": "dbms",
+    "subtopic": "Functional dependencies",
+    "difficulty": "medium",
+    "text": "If A functionally determines B, written A → B, what does that mean?",
+    "options": [
+      "B always determines A",
+      "Each value of A is associated with one value of B in the relation",
+      "A and B must be primary keys",
+      "A and B must contain identical values"
+    ],
+    "correctIndex": 1,
+    "explanation": "A → B means rows agreeing on A must agree on B.",
+    "tags": [
+      "functional-dependencies"
+    ]
+  },
+  {
+    "seedKey": "dbms-transactions-medium-expansion-09",
+    "topic": "dbms",
+    "subtopic": "Transactions",
+    "difficulty": "medium",
+    "text": "What is a dirty read?",
+    "options": [
+      "Reading data written by a transaction that has not committed",
+      "Reading a row twice after it committed",
+      "Reading an indexed column",
+      "Reading data after a backup"
+    ],
+    "correctIndex": 0,
+    "explanation": "A dirty read exposes another transaction’s uncommitted changes, which might later be rolled back.",
+    "tags": [
+      "transactions"
+    ]
+  },
+  {
+    "seedKey": "dbms-indexes-medium-expansion-10",
+    "topic": "dbms",
+    "subtopic": "Indexes",
+    "difficulty": "medium",
+    "text": "Which index is most likely to help a query filtering on the leading column of a composite index (A, B)?",
+    "options": [
+      "An index on unrelated column C only",
+      "The composite index (A, B)",
+      "No index can help a leading-column filter",
+      "An index only on B always replaces it"
+    ],
+    "correctIndex": 1,
+    "explanation": "Many database engines can use the leftmost prefix of a composite index, including a predicate on A alone.",
+    "tags": [
+      "indexes"
+    ]
+  },
+  {
+    "seedKey": "dbms-concurrency-hard-expansion-11",
+    "topic": "dbms",
+    "subtopic": "Concurrency",
+    "difficulty": "hard",
+    "text": "Which anomaly involves a transaction rerunning a range query and finding new rows inserted by another committed transaction?",
+    "options": [
+      "Dirty read",
+      "Phantom read",
+      "Lost update",
+      "Write-only anomaly"
+    ],
+    "correctIndex": 1,
+    "explanation": "A phantom read occurs when repeating a predicate-based query returns a different set of rows due to concurrent inserts or deletes.",
+    "tags": [
+      "concurrency"
+    ]
+  },
+  {
+    "seedKey": "dbms-isolation-hard-expansion-12",
+    "topic": "dbms",
+    "subtopic": "Isolation",
+    "difficulty": "hard",
+    "text": "Which standard isolation level is intended to make concurrent transactions behave as if they executed in some serial order?",
+    "options": [
+      "Read uncommitted",
+      "Read committed",
+      "Repeatable read in every implementation",
+      "Serializable"
+    ],
+    "correctIndex": 3,
+    "explanation": "Serializable is the isolation level defined to provide serializable transaction behavior, though implementations use different techniques.",
+    "tags": [
+      "isolation"
+    ]
+  },
+  {
+    "seedKey": "dbms-query-planning-hard-expansion-13",
+    "topic": "dbms",
+    "subtopic": "Query planning",
+    "difficulty": "hard",
+    "text": "What is a common trade-off of a B-tree index on a frequently updated table?",
+    "options": [
+      "Faster qualifying reads at the cost of storage and index-maintenance work",
+      "Guaranteed faster every possible query",
+      "No storage overhead",
+      "It eliminates the need for constraints"
+    ],
+    "correctIndex": 0,
+    "explanation": "B-tree indexes are useful for many equality and range predicates but consume storage and add work to writes.",
+    "tags": [
+      "query-planning"
+    ]
+  },
+  {
+    "seedKey": "dbms-transactions-hard-expansion-14",
+    "topic": "dbms",
+    "subtopic": "Transactions",
+    "difficulty": "hard",
+    "text": "Why should an application avoid assuming that a transaction will always be retried safely after a network timeout?",
+    "options": [
+      "A timeout proves that the transaction rolled back",
+      "The transaction might have committed even if the client did not receive the response",
+      "Databases never support retries",
+      "A retry always deletes the database"
+    ],
+    "correctIndex": 1,
+    "explanation": "After a lost response the client may not know whether the server committed; idempotency keys or outcome checks help avoid duplicate effects.",
+    "tags": [
+      "transactions"
+    ]
+  },
+  {
+    "seedKey": "os-protection-easy-expansion-01",
+    "topic": "os",
+    "subtopic": "Protection",
+    "difficulty": "easy",
+    "text": "What is a typical purpose of user mode in an operating system?",
+    "options": [
+      "Allow applications unrestricted hardware access",
+      "Restrict applications from executing privileged operations directly",
+      "Disable virtual memory",
+      "Prevent all multitasking"
+    ],
+    "correctIndex": 1,
+    "explanation": "User mode limits privileges so applications must request protected operations through controlled kernel interfaces.",
+    "tags": [
+      "protection"
+    ]
+  },
+  {
+    "seedKey": "os-processes-easy-expansion-02",
+    "topic": "os",
+    "subtopic": "Processes",
+    "difficulty": "easy",
+    "text": "What information is commonly stored in a process control block?",
+    "options": [
+      "Only the source code comments",
+      "Process state, scheduling information and saved execution context",
+      "Only the monitor resolution",
+      "Only a website URL"
+    ],
+    "correctIndex": 1,
+    "explanation": "The PCB holds operating-system bookkeeping needed to manage and resume a process.",
+    "tags": [
+      "processes"
+    ]
+  },
+  {
+    "seedKey": "os-memory-easy-expansion-03",
+    "topic": "os",
+    "subtopic": "Memory",
+    "difficulty": "easy",
+    "text": "What does virtual memory allow an operating system to provide?",
+    "options": [
+      "An address space abstraction that can exceed or differ from physical RAM layout",
+      "A guarantee that programs never use disk",
+      "A CPU without registers",
+      "An automatic database backup"
+    ],
+    "correctIndex": 0,
+    "explanation": "Virtual memory maps process addresses to physical memory and may use secondary storage to support address spaces larger than resident RAM.",
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "seedKey": "os-concurrency-easy-expansion-04",
+    "topic": "os",
+    "subtopic": "Concurrency",
+    "difficulty": "easy",
+    "text": "What is a race condition?",
+    "options": [
+      "A condition where output depends on the timing or interleaving of concurrent operations",
+      "A process with a high CPU frequency",
+      "A queue sorted by arrival time",
+      "A network packet sent twice by definition"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unsynchronised concurrent accesses can produce results that depend on execution interleavings.",
+    "tags": [
+      "concurrency"
+    ]
+  },
+  {
+    "seedKey": "os-scheduling-medium-expansion-05",
+    "topic": "os",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "text": "What is a context switch?",
+    "options": [
+      "Changing a source-code variable name",
+      "Saving one execution context and restoring another so the CPU can run different work",
+      "Deleting a process from disk",
+      "Converting a process into a file"
+    ],
+    "correctIndex": 1,
+    "explanation": "The OS saves state for the currently scheduled task and restores state for another task.",
+    "tags": [
+      "scheduling"
+    ]
+  },
+  {
+    "seedKey": "os-concurrency-medium-expansion-06",
+    "topic": "os",
+    "subtopic": "Concurrency",
+    "difficulty": "medium",
+    "text": "What is the principal role of a mutex?",
+    "options": [
+      "To compress process memory",
+      "To provide mutual exclusion around a shared resource",
+      "To replace every CPU scheduler",
+      "To guarantee deadlock can never occur"
+    ],
+    "correctIndex": 1,
+    "explanation": "A mutex permits controlled exclusive access to a critical section, though incorrect lock ordering can still cause deadlocks.",
+    "tags": [
+      "concurrency"
+    ]
+  },
+  {
+    "seedKey": "os-concurrency-medium-expansion-07",
+    "topic": "os",
+    "subtopic": "Concurrency",
+    "difficulty": "medium",
+    "text": "A counting semaphore initialised to 3 is often used to represent what?",
+    "options": [
+      "Exactly three CPUs are installed",
+      "Up to three units of a resource may be acquired simultaneously",
+      "A process must execute three times",
+      "A file contains three bytes"
+    ],
+    "correctIndex": 1,
+    "explanation": "A counting semaphore tracks a quantity of available permits for a limited resource pool.",
+    "tags": [
+      "concurrency"
+    ]
+  },
+  {
+    "seedKey": "os-memory-medium-expansion-08",
+    "topic": "os",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "text": "What is thrashing in a virtual-memory system?",
+    "options": [
+      "A CPU instruction changing arithmetic signs",
+      "Excessive paging that leaves little time for useful execution",
+      "A successful cache hit",
+      "A process exiting normally"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thrashing occurs when memory pressure causes frequent page faults and paging activity that overwhelm useful work.",
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "seedKey": "os-scheduling-medium-expansion-09",
+    "topic": "os",
+    "subtopic": "Scheduling",
+    "difficulty": "medium",
+    "text": "What is starvation in process scheduling?",
+    "options": [
+      "A process waits indefinitely because other work repeatedly receives the needed resource or CPU",
+      "A process always completes first",
+      "The computer has no power",
+      "A process consumes exactly zero memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "Starvation is indefinite postponement; fair scheduling or aging can reduce it.",
+    "tags": [
+      "scheduling"
+    ]
+  },
+  {
+    "seedKey": "os-memory-medium-expansion-10",
+    "topic": "os",
+    "subtopic": "Memory",
+    "difficulty": "medium",
+    "text": "With demand paging, when can a page be brought into physical memory?",
+    "options": [
+      "Only when the operating system starts",
+      "When the process first accesses it and the page is not resident",
+      "Only when a file is deleted",
+      "Every clock cycle regardless of access"
+    ],
+    "correctIndex": 1,
+    "explanation": "A page fault can trigger loading a page on first access or when it has been evicted from RAM.",
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "seedKey": "os-deadlocks-hard-expansion-11",
+    "topic": "os",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "text": "What does the Banker’s algorithm attempt to determine before granting a resource request?",
+    "options": [
+      "Whether the resulting state is safe according to declared resource needs",
+      "Whether the process source code compiles",
+      "Whether every process uses one thread",
+      "Whether the disk is full only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Banker’s algorithm grants requests only if the resulting state admits a safe sequence for processes to finish.",
+    "tags": [
+      "deadlocks"
+    ]
+  },
+  {
+    "seedKey": "os-scheduling-hard-expansion-12",
+    "topic": "os",
+    "subtopic": "Scheduling",
+    "difficulty": "hard",
+    "text": "Why can shortest-job-first scheduling minimise average waiting time under its classical assumptions?",
+    "options": [
+      "It runs the longest jobs first",
+      "Short jobs complete earlier and add less waiting to the queue when burst lengths are known",
+      "It avoids every context switch",
+      "It guarantees no starvation in all variants"
+    ],
+    "correctIndex": 1,
+    "explanation": "With known CPU burst lengths and comparable jobs, running the shortest remaining burst first reduces average waiting time; long jobs can still starve.",
+    "tags": [
+      "scheduling"
+    ]
+  },
+  {
+    "seedKey": "os-virtual-memory-hard-expansion-13",
+    "topic": "os",
+    "subtopic": "Virtual memory",
+    "difficulty": "hard",
+    "text": "What is a page table used for?",
+    "options": [
+      "Mapping virtual page numbers to physical frames and recording related status bits",
+      "Mapping SQL queries to tables",
+      "Scheduling HTTP requests across domains",
+      "Encrypting the process control block"
+    ],
+    "correctIndex": 0,
+    "explanation": "Page tables hold mappings and permission/status information used by address translation.",
+    "tags": [
+      "virtual-memory"
+    ]
+  },
+  {
+    "seedKey": "os-concurrency-hard-expansion-14",
+    "topic": "os",
+    "subtopic": "Concurrency",
+    "difficulty": "hard",
+    "text": "Why is a deadlock prevention strategy based on resource ordering effective?",
+    "options": [
+      "It ensures every process receives every resource instantly",
+      "It can break circular wait by requiring locks to be acquired in a global order",
+      "It disables mutual exclusion",
+      "It makes processes run only in user mode"
+    ],
+    "correctIndex": 1,
+    "explanation": "A consistent global resource ordering prevents cycles in the resource-allocation graph, breaking the circular-wait condition.",
+    "tags": [
+      "concurrency"
+    ]
+  },
+  {
+    "seedKey": "cn-address-resolution-easy-expansion-01",
+    "topic": "cn",
+    "subtopic": "Address resolution",
+    "difficulty": "easy",
+    "text": "On a typical IPv4 local network, what does ARP help a host discover?",
+    "options": [
+      "The MAC address associated with a local IPv4 address",
+      "A website’s HTML source",
+      "A user’s password",
+      "The next SQL query"
+    ],
+    "correctIndex": 0,
+    "explanation": "ARP resolves a local IPv4 next-hop address to a link-layer hardware address.",
+    "tags": [
+      "address-resolution"
+    ]
+  },
+  {
+    "seedKey": "cn-transport-easy-expansion-02",
+    "topic": "cn",
+    "subtopic": "Transport",
+    "difficulty": "easy",
+    "text": "Which transport protocol is connectionless and does not itself guarantee delivery or ordering?",
+    "options": [
+      "TCP",
+      "UDP",
+      "TLS",
+      "HTTP"
+    ],
+    "correctIndex": 1,
+    "explanation": "UDP provides datagrams without TCP-style connection setup, retransmission or ordered delivery guarantees.",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "seedKey": "cn-network-services-easy-expansion-03",
+    "topic": "cn",
+    "subtopic": "Network services",
+    "difficulty": "easy",
+    "text": "What is the usual role of DHCP on a client network?",
+    "options": [
+      "Assign configuration such as an IP address and default gateway",
+      "Encrypt all application files",
+      "Find syntax errors in code",
+      "Replace DNS in all situations"
+    ],
+    "correctIndex": 0,
+    "explanation": "DHCP can lease IP configuration and related settings to hosts automatically.",
+    "tags": [
+      "network-services"
+    ]
+  },
+  {
+    "seedKey": "cn-security-easy-expansion-04",
+    "topic": "cn",
+    "subtopic": "Security",
+    "difficulty": "easy",
+    "text": "What does TLS primarily provide for a network connection when correctly configured?",
+    "options": [
+      "Encryption in transit and integrity, with server authentication in common web use",
+      "Automatic protection from every application bug",
+      "A guarantee of zero latency",
+      "An IP address for every device"
+    ],
+    "correctIndex": 0,
+    "explanation": "TLS protects data in transit and supports authenticated connections; it does not fix every endpoint vulnerability.",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "seedKey": "cn-subnetting-medium-expansion-05",
+    "topic": "cn",
+    "subtopic": "Subnetting",
+    "difficulty": "medium",
+    "text": "How many traditionally usable host addresses are in an IPv4 /26 subnet?",
+    "options": [
+      "30",
+      "62",
+      "64",
+      "126"
+    ],
+    "correctIndex": 1,
+    "explanation": "A /26 leaves 6 host bits, giving 64 addresses; excluding network and broadcast leaves 62 traditionally usable host addresses.",
+    "tags": [
+      "subnetting"
+    ]
+  },
+  {
+    "seedKey": "cn-routing-medium-expansion-06",
+    "topic": "cn",
+    "subtopic": "Routing",
+    "difficulty": "medium",
+    "text": "What does a router primarily use its routing table for?",
+    "options": [
+      "To choose a next hop or outgoing interface for an IP packet",
+      "To store browser cookies",
+      "To compile application code",
+      "To decide CSS layout"
+    ],
+    "correctIndex": 0,
+    "explanation": "Routing-table entries help determine how to forward packets toward destination IP networks.",
+    "tags": [
+      "routing"
+    ]
+  },
+  {
+    "seedKey": "cn-nat-medium-expansion-07",
+    "topic": "cn",
+    "subtopic": "NAT",
+    "difficulty": "medium",
+    "text": "What is a common purpose of network address translation (NAT) in home IPv4 networks?",
+    "options": [
+      "Allow multiple private-address devices to share a public IPv4 address for outbound access",
+      "Guarantee all packets are encrypted",
+      "Replace all local switches",
+      "Make DNS records unnecessary"
+    ],
+    "correctIndex": 0,
+    "explanation": "Many home gateways translate private source addresses and ports to a shared public address.",
+    "tags": [
+      "nat"
+    ]
+  },
+  {
+    "seedKey": "cn-tcp-medium-expansion-08",
+    "topic": "cn",
+    "subtopic": "TCP",
+    "difficulty": "medium",
+    "text": "What is the main purpose of TCP sequence numbers and acknowledgements?",
+    "options": [
+      "Support ordered delivery and identify received byte ranges",
+      "Choose page colours",
+      "Resolve domain names",
+      "Assign wireless channels only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sequence numbers identify bytes and acknowledgements communicate received data, enabling ordered reliable delivery.",
+    "tags": [
+      "tcp"
+    ]
+  },
+  {
+    "seedKey": "cn-congestion-medium-expansion-09",
+    "topic": "cn",
+    "subtopic": "Congestion",
+    "difficulty": "medium",
+    "text": "What is network congestion control intended to do?",
+    "options": [
+      "Adjust sending behavior to reduce overload within the network",
+      "Increase a process’s stack size",
+      "Provide DNS names to devices",
+      "Guarantee every connection uses UDP"
+    ],
+    "correctIndex": 0,
+    "explanation": "Congestion control adapts traffic to network conditions to avoid overwhelming bottlenecks.",
+    "tags": [
+      "congestion"
+    ]
+  },
+  {
+    "seedKey": "cn-protocols-medium-expansion-10",
+    "topic": "cn",
+    "subtopic": "Protocols",
+    "difficulty": "medium",
+    "text": "Which protocol is commonly used to resolve a domain name to address records?",
+    "options": [
+      "FTP",
+      "DNS",
+      "SSH",
+      "SMTP only"
+    ],
+    "correctIndex": 1,
+    "explanation": "DNS resolves domain names and can return A, AAAA and other record types.",
+    "tags": [
+      "protocols"
+    ]
+  },
+  {
+    "seedKey": "cn-tcp-hard-expansion-11",
+    "topic": "cn",
+    "subtopic": "TCP",
+    "difficulty": "hard",
+    "text": "Why can TCP retransmit a segment even when the original segment may have reached the receiver?",
+    "options": [
+      "The acknowledgement may have been lost or delayed",
+      "TCP never uses acknowledgements",
+      "The receiver must always delete received bytes",
+      "The IP address changed in every case"
+    ],
+    "correctIndex": 0,
+    "explanation": "If an acknowledgement does not arrive before the retransmission logic triggers, TCP may resend data even if the receiver got the original.",
+    "tags": [
+      "tcp"
+    ]
+  },
+  {
+    "seedKey": "cn-ipv6-hard-expansion-12",
+    "topic": "cn",
+    "subtopic": "IPv6",
+    "difficulty": "hard",
+    "text": "How long is an IPv6 address?",
+    "options": [
+      "32 bits",
+      "64 bits",
+      "128 bits",
+      "256 bits"
+    ],
+    "correctIndex": 2,
+    "explanation": "IPv6 uses 128-bit addresses, offering a much larger address space than IPv4.",
+    "tags": [
+      "ipv6"
+    ]
+  },
+  {
+    "seedKey": "cn-switching-hard-expansion-13",
+    "topic": "cn",
+    "subtopic": "Switching",
+    "difficulty": "hard",
+    "text": "A Layer 2 Ethernet switch normally learns which information to help forward unicast frames?",
+    "options": [
+      "Source MAC addresses and the ports where they were observed",
+      "HTTP status codes",
+      "TCP application passwords",
+      "DNS TXT values only"
+    ],
+    "correctIndex": 0,
+    "explanation": "A learning switch builds a MAC address table from source MAC addresses and ingress ports.",
+    "tags": [
+      "switching"
+    ]
+  },
+  {
+    "seedKey": "cn-reliability-hard-expansion-14",
+    "topic": "cn",
+    "subtopic": "Reliability",
+    "difficulty": "hard",
+    "text": "What is a key difference between link-layer error detection and end-to-end transport reliability?",
+    "options": [
+      "A link-layer checksum or CRC detects some errors on a link but does not alone guarantee end-to-end delivery",
+      "They are identical by definition",
+      "Link-layer checks guarantee application responses",
+      "Transport reliability works only on one Ethernet cable"
+    ],
+    "correctIndex": 0,
+    "explanation": "Link-layer checks detect certain transmission errors locally; delivery, ordering and retransmission end to end require higher-layer mechanisms where provided.",
+    "tags": [
+      "reliability"
+    ]
+  },
+  {
+    "seedKey": "oop-abstraction-easy-expansion-01",
+    "topic": "oop",
+    "subtopic": "Abstraction",
+    "difficulty": "easy",
+    "text": "What is abstraction in object-oriented design?",
+    "options": [
+      "Exposing essential behaviour while hiding unnecessary implementation details",
+      "Copying every field into every object",
+      "Sorting all objects by memory address",
+      "Removing all methods from a class"
+    ],
+    "correctIndex": 0,
+    "explanation": "Abstraction presents a useful contract while hiding internal details not needed by the caller.",
+    "tags": [
+      "abstraction"
+    ]
+  },
+  {
+    "seedKey": "oop-constructors-easy-expansion-02",
+    "topic": "oop",
+    "subtopic": "Constructors",
+    "difficulty": "easy",
+    "text": "What is a constructor commonly used for when an object is created?",
+    "options": [
+      "Initialising the new object’s state",
+      "Destroying the operating system",
+      "Sorting an unrelated array",
+      "Declaring an HTTP route"
+    ],
+    "correctIndex": 0,
+    "explanation": "A constructor establishes the initial valid state of a new object.",
+    "tags": [
+      "constructors"
+    ]
+  },
+  {
+    "seedKey": "oop-access-control-easy-expansion-03",
+    "topic": "oop",
+    "subtopic": "Access control",
+    "difficulty": "easy",
+    "text": "What is the goal of access modifiers such as private and public?",
+    "options": [
+      "Control which code can access a class member",
+      "Change an integer into a string automatically",
+      "Guarantee every method is thread-safe",
+      "Select the CPU scheduling algorithm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Access modifiers control visibility and help enforce encapsulation boundaries.",
+    "tags": [
+      "access-control"
+    ]
+  },
+  {
+    "seedKey": "oop-inheritance-easy-expansion-04",
+    "topic": "oop",
+    "subtopic": "Inheritance",
+    "difficulty": "easy",
+    "text": "What relationship is usually modelled by class inheritance?",
+    "options": [
+      "An “is-a” relationship where a subtype can be used as its base type under the contract",
+      "A database backup relationship only",
+      "A process waiting for a lock",
+      "A one-to-one network route"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inheritance models a subtype relationship when substitutability and design semantics are appropriate.",
+    "tags": [
+      "inheritance"
+    ]
+  },
+  {
+    "seedKey": "oop-polymorphism-medium-expansion-05",
+    "topic": "oop",
+    "subtopic": "Polymorphism",
+    "difficulty": "medium",
+    "text": "In a language with dynamic dispatch, what usually determines which overridden instance method implementation is called?",
+    "options": [
+      "The runtime object type",
+      "The order of files on disk only",
+      "The method’s comment text",
+      "The monitor refresh rate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dynamic dispatch selects an implementation based on the runtime type of the receiver.",
+    "tags": [
+      "polymorphism"
+    ]
+  },
+  {
+    "seedKey": "oop-composition-medium-expansion-06",
+    "topic": "oop",
+    "subtopic": "Composition",
+    "difficulty": "medium",
+    "text": "Why might composition be preferred over inheritance for sharing behaviour between unrelated classes?",
+    "options": [
+      "It allows behavior to be assembled through contained collaborators with looser coupling",
+      "It automatically makes all fields public",
+      "It prohibits code reuse",
+      "It always uses less memory in every language"
+    ],
+    "correctIndex": 0,
+    "explanation": "Composition allows a class to delegate to collaborators without creating a rigid subtype relationship.",
+    "tags": [
+      "composition"
+    ]
+  },
+  {
+    "seedKey": "oop-interfaces-medium-expansion-07",
+    "topic": "oop",
+    "subtopic": "Interfaces",
+    "difficulty": "medium",
+    "text": "What is the primary purpose of an interface or protocol in object-oriented design?",
+    "options": [
+      "Specify operations that implementing types agree to provide",
+      "Store only runtime heap addresses",
+      "Force every implementation to use identical internal code",
+      "Replace all concrete objects"
+    ],
+    "correctIndex": 0,
+    "explanation": "Interfaces define a contract independent of the implementation details.",
+    "tags": [
+      "interfaces"
+    ]
+  },
+  {
+    "seedKey": "oop-overloading-medium-expansion-08",
+    "topic": "oop",
+    "subtopic": "Overloading",
+    "difficulty": "medium",
+    "text": "What is method overloading in languages that support it?",
+    "options": [
+      "Defining multiple methods with the same name but different parameter signatures",
+      "Replacing a method in a subclass only",
+      "Calling a method recursively",
+      "Changing a variable after compilation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Overloading selects among same-named methods based on their parameter lists according to language rules.",
+    "tags": [
+      "overloading"
+    ]
+  },
+  {
+    "seedKey": "oop-immutability-medium-expansion-09",
+    "topic": "oop",
+    "subtopic": "Immutability",
+    "difficulty": "medium",
+    "text": "What is a benefit of an immutable object?",
+    "options": [
+      "Its state cannot be changed after construction, which can simplify reasoning about sharing",
+      "It never occupies memory",
+      "It automatically encrypts its fields",
+      "It can never be passed to a function"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stable state reduces unexpected side effects and can simplify concurrent use.",
+    "tags": [
+      "immutability"
+    ]
+  },
+  {
+    "seedKey": "oop-substitutability-medium-expansion-10",
+    "topic": "oop",
+    "subtopic": "Substitutability",
+    "difficulty": "medium",
+    "text": "The Liskov substitution principle says that a well-designed subtype should do what?",
+    "options": [
+      "Be usable where its base type is expected without breaking the base type’s behavioural contract",
+      "Always contain more public fields",
+      "Never override a method",
+      "Only be created with static methods"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtypes should preserve the behavioural expectations of their base abstractions.",
+    "tags": [
+      "substitutability"
+    ]
+  },
+  {
+    "seedKey": "oop-static-dispatch-hard-expansion-11",
+    "topic": "oop",
+    "subtopic": "Static dispatch",
+    "difficulty": "hard",
+    "text": "In Java, can a static method be overridden with runtime polymorphic dispatch in the same way as an instance method?",
+    "options": [
+      "Yes, always",
+      "No; static methods are hidden rather than dynamically overridden",
+      "Only if the method returns void",
+      "Only when the class has no constructor"
+    ],
+    "correctIndex": 1,
+    "explanation": "Static methods are associated with the class and are resolved by hiding rules rather than runtime instance dispatch.",
+    "tags": [
+      "static-dispatch"
+    ]
+  },
+  {
+    "seedKey": "oop-contracts-hard-expansion-12",
+    "topic": "oop",
+    "subtopic": "Contracts",
+    "difficulty": "hard",
+    "text": "A subtype strengthens a method’s precondition so it rejects some inputs accepted by the base class. Which principle may this violate?",
+    "options": [
+      "Liskov substitution principle",
+      "Single-responsibility principle only",
+      "DRY only",
+      "Open/closed principle in every case"
+    ],
+    "correctIndex": 0,
+    "explanation": "Strengthening preconditions can break callers that were valid under the base-class contract, violating substitutability.",
+    "tags": [
+      "contracts"
+    ]
+  },
+  {
+    "seedKey": "oop-design-principles-hard-expansion-13",
+    "topic": "oop",
+    "subtopic": "Design principles",
+    "difficulty": "hard",
+    "text": "What does the dependency inversion principle recommend for high-level policy and low-level details?",
+    "options": [
+      "Both should depend on abstractions rather than high-level policy depending directly on low-level details",
+      "High-level code must import every concrete class directly",
+      "All modules must be global variables",
+      "Low-level modules must control business policy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dependency inversion places abstractions between high-level policy and implementation details.",
+    "tags": [
+      "design-principles"
+    ]
+  },
+  {
+    "seedKey": "oop-exception-safety-hard-expansion-14",
+    "topic": "oop",
+    "subtopic": "Exception safety",
+    "difficulty": "hard",
+    "text": "Why should a constructor avoid exposing a partially initialised object before validation completes?",
+    "options": [
+      "Other code could observe an object that violates its invariants",
+      "It makes method overloading impossible",
+      "It prevents garbage collection from ever running",
+      "It changes inheritance into composition"
+    ],
+    "correctIndex": 0,
+    "explanation": "Publishing a partially initialised object can let other code observe invalid state or invoke methods before invariants hold.",
+    "tags": [
+      "exception-safety"
+    ]
+  },
+  {
+    "seedKey": "sql-filtering-groups-easy-expansion-01",
+    "topic": "sql",
+    "subtopic": "Filtering groups",
+    "difficulty": "easy",
+    "text": "Which SQL clause filters groups after GROUP BY aggregation?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "ORDER BY only",
+      "FROM"
+    ],
+    "correctIndex": 1,
+    "explanation": "HAVING filters grouped results, often using aggregate expressions; WHERE filters rows before grouping.",
+    "tags": [
+      "filtering-groups"
+    ]
+  },
+  {
+    "seedKey": "sql-null-handling-easy-expansion-02",
+    "topic": "sql",
+    "subtopic": "NULL handling",
+    "difficulty": "easy",
+    "text": "Which SQL expression returns the first non-NULL value from its arguments in databases that support it?",
+    "options": [
+      "COALESCE",
+      "COUNT",
+      "DISTINCT",
+      "ORDER BY"
+    ],
+    "correctIndex": 0,
+    "explanation": "COALESCE evaluates arguments from left to right and returns the first non-NULL value.",
+    "tags": [
+      "null-handling"
+    ]
+  },
+  {
+    "seedKey": "sql-set-operations-easy-expansion-03",
+    "topic": "sql",
+    "subtopic": "Set operations",
+    "difficulty": "easy",
+    "text": "What does UNION ALL do when combining compatible SELECT results?",
+    "options": [
+      "Combines results and retains duplicates",
+      "Always removes duplicates",
+      "Sorts every row by primary key",
+      "Updates the first table"
+    ],
+    "correctIndex": 0,
+    "explanation": "UNION ALL concatenates result rows without duplicate elimination.",
+    "tags": [
+      "set-operations"
+    ]
+  },
+  {
+    "seedKey": "sql-transactions-easy-expansion-04",
+    "topic": "sql",
+    "subtopic": "Transactions",
+    "difficulty": "easy",
+    "text": "Which SQL command usually makes the current transaction’s changes permanent?",
+    "options": [
+      "ROLLBACK",
+      "COMMIT",
+      "SAVEPOINT only",
+      "EXPLAIN"
+    ],
+    "correctIndex": 1,
+    "explanation": "COMMIT completes the transaction and makes its changes durable according to the database guarantees.",
+    "tags": [
+      "transactions"
+    ]
+  },
+  {
+    "seedKey": "sql-window-functions-medium-expansion-05",
+    "topic": "sql",
+    "subtopic": "Window functions",
+    "difficulty": "medium",
+    "text": "What distinguishes a window function from an ordinary aggregate that groups rows?",
+    "options": [
+      "It can calculate across a related set of rows while keeping each input row in the result",
+      "It always deletes rows after calculation",
+      "It can only return one row total",
+      "It cannot use ORDER BY"
+    ],
+    "correctIndex": 0,
+    "explanation": "Window functions compute over partitions or frames while retaining row-level output.",
+    "tags": [
+      "window-functions"
+    ]
+  },
+  {
+    "seedKey": "sql-ranking-medium-expansion-06",
+    "topic": "sql",
+    "subtopic": "Ranking",
+    "difficulty": "medium",
+    "text": "Which window function assigns the same rank to ties and leaves gaps in the following rank numbers?",
+    "options": [
+      "ROW_NUMBER",
+      "RANK",
+      "DENSE_RANK",
+      "NTILE"
+    ],
+    "correctIndex": 1,
+    "explanation": "RANK gives tied rows the same rank and leaves gaps after ties; DENSE_RANK does not leave gaps.",
+    "tags": [
+      "ranking"
+    ]
+  },
+  {
+    "seedKey": "sql-subqueries-medium-expansion-07",
+    "topic": "sql",
+    "subtopic": "Subqueries",
+    "difficulty": "medium",
+    "text": "What is a correlated subquery?",
+    "options": [
+      "A subquery that references columns from its outer query",
+      "A query with no FROM clause only",
+      "A query that must create a new database",
+      "A query that can only return integers"
+    ],
+    "correctIndex": 0,
+    "explanation": "A correlated subquery uses values from the surrounding query and is logically evaluated in that outer-row context.",
+    "tags": [
+      "subqueries"
+    ]
+  },
+  {
+    "seedKey": "sql-joins-medium-expansion-08",
+    "topic": "sql",
+    "subtopic": "Joins",
+    "difficulty": "medium",
+    "text": "Which join returns matching rows from both inputs and omits rows without a match?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "CROSS JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "correctIndex": 0,
+    "explanation": "An inner join includes only rows satisfying the join condition.",
+    "tags": [
+      "joins"
+    ]
+  },
+  {
+    "seedKey": "sql-security-medium-expansion-09",
+    "topic": "sql",
+    "subtopic": "Security",
+    "difficulty": "medium",
+    "text": "What is the strongest general approach for passing user-supplied values into SQL queries?",
+    "options": [
+      "Concatenate raw input into SQL text",
+      "Use parameterised queries or prepared statements",
+      "Remove spaces from the input only",
+      "Base64-encode input and concatenate it"
+    ],
+    "correctIndex": 1,
+    "explanation": "Parameterised queries keep values separate from query syntax and help prevent SQL injection.",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "seedKey": "sql-indexes-medium-expansion-10",
+    "topic": "sql",
+    "subtopic": "Indexes",
+    "difficulty": "medium",
+    "text": "Why might an index not improve a query that returns most rows in a table?",
+    "options": [
+      "A full scan may be cheaper than many index lookups and table reads",
+      "Indexes cannot store any key values",
+      "SQL ignores all indexes for SELECT",
+      "An index always makes the query invalid"
+    ],
+    "correctIndex": 0,
+    "explanation": "For low-selectivity predicates, scanning the table can cost less than traversing an index and fetching a large fraction of rows.",
+    "tags": [
+      "indexes"
+    ]
+  },
+  {
+    "seedKey": "sql-common-table-expressions-hard-expansion-11",
+    "topic": "sql",
+    "subtopic": "Common table expressions",
+    "difficulty": "hard",
+    "text": "What is a common use of a recursive common table expression (CTE)?",
+    "options": [
+      "Traverse hierarchical or graph-like relationships such as an organisational tree",
+      "Encrypt a database column automatically",
+      "Guarantee all queries run in constant time",
+      "Replace all foreign keys"
+    ],
+    "correctIndex": 0,
+    "explanation": "Recursive CTEs repeatedly apply a query to prior results, which supports hierarchy and reachability queries.",
+    "tags": [
+      "common-table-expressions"
+    ]
+  },
+  {
+    "seedKey": "sql-set-operations-hard-expansion-12",
+    "topic": "sql",
+    "subtopic": "Set operations",
+    "difficulty": "hard",
+    "text": "What requirement generally applies to the SELECT statements combined with UNION?",
+    "options": [
+      "They must return the same number of columns with compatible corresponding types",
+      "They must query the same physical table",
+      "They must use identical WHERE clauses",
+      "Each must return exactly one row"
+    ],
+    "correctIndex": 0,
+    "explanation": "Set operations combine corresponding columns, so both branches must have compatible result shapes and types.",
+    "tags": [
+      "set-operations"
+    ]
+  },
+  {
+    "seedKey": "sql-data-modification-hard-expansion-13",
+    "topic": "sql",
+    "subtopic": "Data modification",
+    "difficulty": "hard",
+    "text": "What is a key difference between DELETE and TRUNCATE in many relational databases?",
+    "options": [
+      "DELETE can filter individual rows with WHERE; TRUNCATE generally removes all rows as a bulk operation",
+      "DELETE cannot modify data",
+      "TRUNCATE is always identical across all database products",
+      "TRUNCATE always supports WHERE"
+    ],
+    "correctIndex": 0,
+    "explanation": "DELETE supports row predicates; TRUNCATE is typically a bulk table operation with database-specific transactional and identity behavior.",
+    "tags": [
+      "data-modification"
+    ]
+  },
+  {
+    "seedKey": "sql-transactions-hard-expansion-14",
+    "topic": "sql",
+    "subtopic": "Transactions",
+    "difficulty": "hard",
+    "text": "Why should an application use a unique idempotency key for a retryable payment-like operation?",
+    "options": [
+      "To identify repeated submissions as the same logical operation and avoid duplicate effects",
+      "To make the SQL query always return NULL",
+      "To replace transaction isolation",
+      "To expose all internal error details"
+    ],
+    "correctIndex": 0,
+    "explanation": "A stable idempotency key lets the application detect duplicate requests when the client retries after an uncertain response.",
+    "tags": [
+      "transactions"
+    ]
+  },
+  {
+    "seedKey": "aptitude-percentages-easy-expansion-01",
+    "topic": "aptitude",
+    "subtopic": "Percentages",
+    "difficulty": "easy",
+    "text": "A product priced at 800 receives a 25% discount. What is the discounted price?",
+    "options": [
+      "600",
+      "650",
+      "700",
+      "750"
+    ],
+    "correctIndex": 0,
+    "explanation": "A 25% discount is 200, so the discounted price is 800 − 200 = 600.",
+    "tags": [
+      "percentages"
+    ]
+  },
+  {
+    "seedKey": "aptitude-averages-easy-expansion-02",
+    "topic": "aptitude",
+    "subtopic": "Averages",
+    "difficulty": "easy",
+    "text": "What is the arithmetic mean of 4, 8, and 12?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "The mean is (4 + 8 + 12) / 3 = 24 / 3 = 8.",
+    "tags": [
+      "averages"
+    ]
+  },
+  {
+    "seedKey": "aptitude-speed-and-distance-easy-expansion-03",
+    "topic": "aptitude",
+    "subtopic": "Speed and distance",
+    "difficulty": "easy",
+    "text": "A vehicle travels 120 km in 2 hours at a constant speed. What is its speed?",
+    "options": [
+      "40 km/h",
+      "50 km/h",
+      "60 km/h",
+      "80 km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Speed is distance divided by time: 120 / 2 = 60 km/h.",
+    "tags": [
+      "speed-and-distance"
+    ]
+  },
+  {
+    "seedKey": "aptitude-simple-interest-easy-expansion-04",
+    "topic": "aptitude",
+    "subtopic": "Simple interest",
+    "difficulty": "easy",
+    "text": "What is the simple interest on 1000 at 5% per year for 2 years?",
+    "options": [
+      "50",
+      "100",
+      "150",
+      "200"
+    ],
+    "correctIndex": 1,
+    "explanation": "Simple interest is P × r × t = 1000 × 0.05 × 2 = 100.",
+    "tags": [
+      "simple-interest"
+    ]
+  },
+  {
+    "seedKey": "aptitude-work-rates-medium-expansion-05",
+    "topic": "aptitude",
+    "subtopic": "Work rates",
+    "difficulty": "medium",
+    "text": "A can complete a job in 6 days and B can complete the same job in 3 days. If their rates add, how long do they take working together?",
+    "options": [
+      "1 day",
+      "2 days",
+      "3 days",
+      "4 days"
+    ],
+    "correctIndex": 1,
+    "explanation": "Their combined daily rate is 1/6 + 1/3 = 1/2 of the job, so the job takes 2 days.",
+    "tags": [
+      "work-rates"
+    ]
+  },
+  {
+    "seedKey": "aptitude-probability-medium-expansion-06",
+    "topic": "aptitude",
+    "subtopic": "Probability",
+    "difficulty": "medium",
+    "text": "A fair six-sided die is rolled once. What is the probability of getting a number greater than 4?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correctIndex": 1,
+    "explanation": "The favourable outcomes are 5 and 6, so the probability is 2/6 = 1/3.",
+    "tags": [
+      "probability"
+    ]
+  },
+  {
+    "seedKey": "aptitude-ratios-medium-expansion-07",
+    "topic": "aptitude",
+    "subtopic": "Ratios",
+    "difficulty": "medium",
+    "text": "A mixture contains water and juice in the ratio 2:3. If the mixture is 25 litres, how many litres are juice?",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are five total parts, and juice is three parts: 25 × 3/5 = 15 litres.",
+    "tags": [
+      "ratios"
+    ]
+  },
+  {
+    "seedKey": "aptitude-percentages-medium-expansion-08",
+    "topic": "aptitude",
+    "subtopic": "Percentages",
+    "difficulty": "medium",
+    "text": "A quantity increases from 80 to 100. What is the percentage increase?",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "40%"
+    ],
+    "correctIndex": 1,
+    "explanation": "The increase is 20, and 20/80 × 100% = 25%.",
+    "tags": [
+      "percentages"
+    ]
+  },
+  {
+    "seedKey": "aptitude-combinations-medium-expansion-09",
+    "topic": "aptitude",
+    "subtopic": "Combinations",
+    "difficulty": "medium",
+    "text": "How many ways can a committee of 2 be chosen from 5 distinct people, ignoring order?",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "The number of combinations is 5 choose 2 = 5 × 4 / 2 = 10.",
+    "tags": [
+      "combinations"
+    ]
+  },
+  {
+    "seedKey": "aptitude-relative-speed-medium-expansion-10",
+    "topic": "aptitude",
+    "subtopic": "Relative speed",
+    "difficulty": "medium",
+    "text": "Two trains move toward each other at 50 km/h and 70 km/h. What is their closing speed?",
+    "options": [
+      "20 km/h",
+      "50 km/h",
+      "70 km/h",
+      "120 km/h"
+    ],
+    "correctIndex": 3,
+    "explanation": "When objects move toward each other, their closing speed is the sum: 50 + 70 = 120 km/h.",
+    "tags": [
+      "relative-speed"
+    ]
+  },
+  {
+    "seedKey": "aptitude-compound-interest-hard-expansion-11",
+    "topic": "aptitude",
+    "subtopic": "Compound interest",
+    "difficulty": "hard",
+    "text": "What is the amount on 1000 after 2 years at 10% annual compound interest, compounded yearly?",
+    "options": [
+      "1100",
+      "1200",
+      "1210",
+      "1220"
+    ],
+    "correctIndex": 2,
+    "explanation": "The amount is 1000 × 1.1² = 1210.",
+    "tags": [
+      "compound-interest"
+    ]
+  },
+  {
+    "seedKey": "aptitude-permutations-hard-expansion-12",
+    "topic": "aptitude",
+    "subtopic": "Permutations",
+    "difficulty": "hard",
+    "text": "How many distinct arrangements are possible for the letters A, B, C, and D if each letter is used exactly once?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "Four distinct items can be ordered in 4! = 4 × 3 × 2 × 1 = 24 ways.",
+    "tags": [
+      "permutations"
+    ]
+  },
+  {
+    "seedKey": "aptitude-work-rates-hard-expansion-13",
+    "topic": "aptitude",
+    "subtopic": "Work rates",
+    "difficulty": "hard",
+    "text": "A pipe fills a tank in 4 hours while a leak empties a full tank in 12 hours. If both operate together from empty, how long to fill the tank?",
+    "options": [
+      "3 hours",
+      "4 hours",
+      "6 hours",
+      "8 hours"
+    ],
+    "correctIndex": 2,
+    "explanation": "Net filling rate is 1/4 − 1/12 = 1/6 tank per hour, so filling takes 6 hours.",
+    "tags": [
+      "work-rates"
+    ]
+  },
+  {
+    "seedKey": "aptitude-probability-hard-expansion-14",
+    "topic": "aptitude",
+    "subtopic": "Probability",
+    "difficulty": "hard",
+    "text": "A bag contains 3 red and 2 blue balls. Two balls are drawn without replacement. What is the probability both are red?",
+    "options": [
+      "1/10",
+      "3/10",
+      "2/5",
+      "3/5"
+    ],
+    "correctIndex": 1,
+    "explanation": "The probability is (3/5) × (2/4) = 6/20 = 3/10.",
+    "tags": [
+      "probability"
+    ]
+  },
+  {
+    "seedKey": "web-http-methods-easy-expansion-01",
+    "topic": "web",
+    "subtopic": "HTTP methods",
+    "difficulty": "easy",
+    "text": "What is an important property expected of an idempotent HTTP method such as PUT?",
+    "options": [
+      "Repeating the same request has the same intended effect as making it once",
+      "It always returns status 200",
+      "It must never carry a request body",
+      "It can only be sent over HTTP without TLS"
+    ],
+    "correctIndex": 0,
+    "explanation": "Idempotence concerns intended server effect, not necessarily identical response codes or bodies.",
+    "tags": [
+      "http-methods"
+    ]
+  },
+  {
+    "seedKey": "web-http-status-easy-expansion-02",
+    "topic": "web",
+    "subtopic": "HTTP status",
+    "difficulty": "easy",
+    "text": "What does HTTP status 201 Created normally communicate?",
+    "options": [
+      "The request created a resource",
+      "Authentication is always missing",
+      "The request timed out",
+      "The server encountered a syntax error"
+    ],
+    "correctIndex": 0,
+    "explanation": "201 indicates that the request resulted in creation of a resource.",
+    "tags": [
+      "http-status"
+    ]
+  },
+  {
+    "seedKey": "web-cookies-easy-expansion-03",
+    "topic": "web",
+    "subtopic": "Cookies",
+    "difficulty": "easy",
+    "text": "What does the HttpOnly cookie attribute prevent?",
+    "options": [
+      "Client-side JavaScript from reading the cookie through browser cookie APIs",
+      "The browser from sending the cookie to the server",
+      "The cookie from expiring",
+      "The server from setting the cookie over HTTPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "HttpOnly prevents direct access to that cookie from client-side scripts, though it does not by itself prevent every XSS impact.",
+    "tags": [
+      "cookies"
+    ]
+  },
+  {
+    "seedKey": "web-dom-easy-expansion-04",
+    "topic": "web",
+    "subtopic": "DOM",
+    "difficulty": "easy",
+    "text": "In event bubbling, after an event occurs on a nested element, where can it propagate next?",
+    "options": [
+      "Toward ancestor elements in the DOM tree",
+      "Only to unrelated tabs",
+      "Directly to the database",
+      "Only to elements with no parents"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bubbling propagates an event from the target through its ancestors unless propagation is stopped.",
+    "tags": [
+      "dom"
+    ]
+  },
+  {
+    "seedKey": "web-http-methods-medium-expansion-05",
+    "topic": "web",
+    "subtopic": "HTTP methods",
+    "difficulty": "medium",
+    "text": "Which HTTP method is conventionally used to retrieve a representation without requesting a state-changing action?",
+    "options": [
+      "GET",
+      "PATCH",
+      "DELETE",
+      "POST only"
+    ],
+    "correctIndex": 0,
+    "explanation": "GET is defined for retrieval and is intended to be safe; applications should not use it for state-changing actions.",
+    "tags": [
+      "http-methods"
+    ]
+  },
+  {
+    "seedKey": "web-browser-security-medium-expansion-06",
+    "topic": "web",
+    "subtopic": "Browser security",
+    "difficulty": "medium",
+    "text": "What security issue is a SameSite cookie attribute primarily designed to help mitigate?",
+    "options": [
+      "Cross-site request forgery risks from cross-site cookie sending",
+      "CPU cache misses",
+      "SQL query planning errors",
+      "Malware in every downloaded file"
+    ],
+    "correctIndex": 0,
+    "explanation": "SameSite can limit cross-site cookie attachment and therefore helps reduce CSRF exposure, but it is not a complete CSRF strategy in every setup.",
+    "tags": [
+      "browser-security"
+    ]
+  },
+  {
+    "seedKey": "web-web-security-medium-expansion-07",
+    "topic": "web",
+    "subtopic": "Web security",
+    "difficulty": "medium",
+    "text": "What is reflected cross-site scripting (XSS)?",
+    "options": [
+      "Untrusted input is included in a response and interpreted as executable script by a browser",
+      "A request is cached for too long",
+      "A database index is missing",
+      "A server returns a correct JSON document"
+    ],
+    "correctIndex": 0,
+    "explanation": "Reflected XSS occurs when attacker-controlled input is reflected into a page without appropriate context-sensitive output encoding or sanitisation.",
+    "tags": [
+      "web-security"
+    ]
+  },
+  {
+    "seedKey": "web-javascript-medium-expansion-08",
+    "topic": "web",
+    "subtopic": "JavaScript",
+    "difficulty": "medium",
+    "text": "What does Promise.all normally do when one of its input promises rejects?",
+    "options": [
+      "The combined promise rejects with that failure, while other operations may still be running",
+      "It silently converts every rejection into success",
+      "It cancels all underlying network requests automatically",
+      "It waits forever and never settles"
+    ],
+    "correctIndex": 0,
+    "explanation": "Promise.all rejects when an input rejects; it does not automatically cancel the other underlying tasks.",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "seedKey": "web-html-medium-expansion-09",
+    "topic": "web",
+    "subtopic": "HTML",
+    "difficulty": "medium",
+    "text": "Why use semantic HTML elements such as main, nav, and button instead of generic div elements everywhere?",
+    "options": [
+      "They communicate structure and interaction semantics to browsers and assistive technologies",
+      "They automatically prevent all security vulnerabilities",
+      "They remove the need for CSS",
+      "They guarantee faster database queries"
+    ],
+    "correctIndex": 0,
+    "explanation": "Semantic elements provide meaningful structure and native behavior that can improve accessibility and maintainability.",
+    "tags": [
+      "html"
+    ]
+  },
+  {
+    "seedKey": "web-http-security-medium-expansion-10",
+    "topic": "web",
+    "subtopic": "HTTP security",
+    "difficulty": "medium",
+    "text": "What is the main purpose of a Content Security Policy (CSP)?",
+    "options": [
+      "Restrict which resource sources and execution behaviors a browser should allow",
+      "Store passwords in the browser",
+      "Replace authentication and authorisation",
+      "Speed up every database query"
+    ],
+    "correctIndex": 0,
+    "explanation": "CSP is a browser-enforced policy that can limit resource loading and script execution, reducing the impact of some injection attacks.",
+    "tags": [
+      "http-security"
+    ]
+  },
+  {
+    "seedKey": "web-csrf-hard-expansion-11",
+    "topic": "web",
+    "subtopic": "CSRF",
+    "difficulty": "hard",
+    "text": "Why does a CSRF attack commonly exploit a browser’s automatic inclusion of credentials such as cookies?",
+    "options": [
+      "A victim’s browser may send authenticated cookies with a forged cross-site request",
+      "The attacker must know the victim’s password in plaintext",
+      "Browsers never send cookies automatically",
+      "CSRF only targets public endpoints"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cookie-based ambient credentials can accompany forged requests; SameSite, CSRF tokens, origin checks and suitable API design help mitigate it.",
+    "tags": [
+      "csrf"
+    ]
+  },
+  {
+    "seedKey": "web-cors-hard-expansion-12",
+    "topic": "web",
+    "subtopic": "CORS",
+    "difficulty": "hard",
+    "text": "A browser sends a CORS preflight request using OPTIONS. What is the browser generally checking?",
+    "options": [
+      "Whether the server permits the requested origin, method and headers for the upcoming cross-origin request",
+      "Whether the user’s password has expired",
+      "Whether the response HTML contains a title",
+      "Whether MongoDB has an index"
+    ],
+    "correctIndex": 0,
+    "explanation": "Preflight lets the browser ask whether a server allows the proposed cross-origin method and headers.",
+    "tags": [
+      "cors"
+    ]
+  },
+  {
+    "seedKey": "web-storage-hard-expansion-13",
+    "topic": "web",
+    "subtopic": "Storage",
+    "difficulty": "hard",
+    "text": "Why is localStorage generally unsuitable for storing a long-lived bearer access token in an XSS-sensitive application?",
+    "options": [
+      "JavaScript running in the origin can read it if script execution is compromised",
+      "It expires every second by specification",
+      "It cannot store strings",
+      "The server cannot accept bearer tokens"
+    ],
+    "correctIndex": 0,
+    "explanation": "Origin JavaScript can access localStorage, so an XSS payload can potentially exfiltrate stored tokens; in-memory access tokens reduce persistence exposure.",
+    "tags": [
+      "storage"
+    ]
+  },
+  {
+    "seedKey": "web-http-status-hard-expansion-14",
+    "topic": "web",
+    "subtopic": "HTTP status",
+    "difficulty": "hard",
+    "text": "What is the conventional distinction between HTTP 401 and 403?",
+    "options": [
+      "401 indicates missing or invalid authentication; 403 indicates the server refuses access despite understanding the request, often after authentication",
+      "401 means database full; 403 means network cable unplugged",
+      "They always mean exactly the same thing",
+      "403 means the request succeeded"
+    ],
+    "correctIndex": 0,
+    "explanation": "401 is associated with missing or invalid authentication credentials; 403 indicates refusal to fulfil an understood request.",
+    "tags": [
+      "http-status"
+    ]
+  },
+  {
+    "seedKey": "ml-data-leakage-easy-expansion-01",
+    "topic": "ml",
+    "subtopic": "Data leakage",
+    "difficulty": "easy",
+    "text": "What is data leakage in machine learning evaluation?",
+    "options": [
+      "Information unavailable at prediction time improperly influences training or evaluation",
+      "The dataset contains any missing values",
+      "The model uses a GPU",
+      "The classes have names"
+    ],
+    "correctIndex": 0,
+    "explanation": "Leakage occurs when training or evaluation uses information that would not legitimately be available for the intended prediction.",
+    "tags": [
+      "data-leakage"
+    ]
+  },
+  {
+    "seedKey": "ml-regularisation-easy-expansion-02",
+    "topic": "ml",
+    "subtopic": "Regularisation",
+    "difficulty": "easy",
+    "text": "What is a common goal of regularisation?",
+    "options": [
+      "Reduce overfitting by discouraging unnecessarily complex model behavior",
+      "Guarantee 100% training accuracy",
+      "Increase the number of duplicate examples",
+      "Remove the need for a validation set"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regularisation penalises or constrains model complexity to improve generalisation.",
+    "tags": [
+      "regularisation"
+    ]
+  },
+  {
+    "seedKey": "ml-classification-metrics-easy-expansion-03",
+    "topic": "ml",
+    "subtopic": "Classification metrics",
+    "difficulty": "easy",
+    "text": "Recall for the positive class is defined as which ratio?",
+    "options": [
+      "TP / (TP + FN)",
+      "TP / (TP + FP)",
+      "TN / (TN + FP)",
+      "(TP + TN) / all predictions"
+    ],
+    "correctIndex": 0,
+    "explanation": "Recall measures the share of actual positive examples correctly identified.",
+    "tags": [
+      "classification-metrics"
+    ]
+  },
+  {
+    "seedKey": "ml-neural-networks-easy-expansion-04",
+    "topic": "ml",
+    "subtopic": "Neural networks",
+    "difficulty": "easy",
+    "text": "What is the output of ReLU for a negative input x?",
+    "options": [
+      "x",
+      "0",
+      "1",
+      "The square of x"
+    ],
+    "correctIndex": 1,
+    "explanation": "ReLU is max(0, x), so negative inputs map to zero.",
+    "tags": [
+      "neural-networks"
+    ]
+  },
+  {
+    "seedKey": "ml-validation-medium-expansion-05",
+    "topic": "ml",
+    "subtopic": "Validation",
+    "difficulty": "medium",
+    "text": "Why is cross-validation often used when evaluating a model on a limited dataset?",
+    "options": [
+      "It measures performance across multiple train-validation splits rather than relying on one split alone",
+      "It guarantees that data leakage is impossible",
+      "It increases the dataset with new ground truth",
+      "It removes the need for a final held-out test set in every project"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cross-validation provides a more stable estimate by rotating validation folds; a final held-out test set can still be useful.",
+    "tags": [
+      "validation"
+    ]
+  },
+  {
+    "seedKey": "ml-preprocessing-medium-expansion-06",
+    "topic": "ml",
+    "subtopic": "Preprocessing",
+    "difficulty": "medium",
+    "text": "Why should a standard scaler be fitted only on the training split and then applied to validation and test splits?",
+    "options": [
+      "To avoid leaking information from evaluation data into preprocessing parameters",
+      "To make all target labels equal",
+      "To improve a model by changing test labels",
+      "Because validation data cannot contain numbers"
+    ],
+    "correctIndex": 0,
+    "explanation": "Means and standard deviations estimated on all data reveal information from evaluation samples; fit transformations only on training data.",
+    "tags": [
+      "preprocessing"
+    ]
+  },
+  {
+    "seedKey": "ml-clustering-medium-expansion-07",
+    "topic": "ml",
+    "subtopic": "Clustering",
+    "difficulty": "medium",
+    "text": "What is the basic objective of k-means clustering?",
+    "options": [
+      "Minimise within-cluster squared distances to the assigned cluster centroids",
+      "Maximise supervised classification accuracy using labels",
+      "Find a shortest path through a graph",
+      "Estimate only a linear regression slope"
+    ],
+    "correctIndex": 0,
+    "explanation": "K-means alternates assignments and centroid updates to reduce within-cluster sum of squared distances.",
+    "tags": [
+      "clustering"
+    ]
+  },
+  {
+    "seedKey": "ml-bias-and-variance-medium-expansion-08",
+    "topic": "ml",
+    "subtopic": "Bias and variance",
+    "difficulty": "medium",
+    "text": "A model is too simple to capture the underlying pattern and performs poorly on both train and test data. Which issue is most likely?",
+    "options": [
+      "High bias / underfitting",
+      "High variance only",
+      "Perfect calibration",
+      "Label encoding"
+    ],
+    "correctIndex": 0,
+    "explanation": "Underfitting commonly reflects high bias and poor fit even on training examples.",
+    "tags": [
+      "bias-and-variance"
+    ]
+  },
+  {
+    "seedKey": "ml-optimisation-medium-expansion-09",
+    "topic": "ml",
+    "subtopic": "Optimisation",
+    "difficulty": "medium",
+    "text": "What does the learning rate control in gradient-based optimisation?",
+    "options": [
+      "The step size used when updating parameters",
+      "The number of classes in the dataset",
+      "The image resolution only",
+      "The amount of data leakage"
+    ],
+    "correctIndex": 0,
+    "explanation": "The learning rate scales parameter updates; overly high or low values can prevent effective optimisation.",
+    "tags": [
+      "optimisation"
+    ]
+  },
+  {
+    "seedKey": "ml-imbalanced-data-medium-expansion-10",
+    "topic": "ml",
+    "subtopic": "Imbalanced data",
+    "difficulty": "medium",
+    "text": "Why can accuracy be misleading on a dataset where 99% of examples are negative?",
+    "options": [
+      "A classifier predicting negative every time would achieve 99% accuracy while missing all positives",
+      "Accuracy never counts correct predictions",
+      "An imbalanced dataset cannot be evaluated",
+      "Accuracy is always smaller than recall"
+    ],
+    "correctIndex": 0,
+    "explanation": "The majority class dominates accuracy, so minority-class recall, precision, PR-AUC and the confusion matrix may be important.",
+    "tags": [
+      "imbalanced-data"
+    ]
+  },
+  {
+    "seedKey": "ml-roc-auc-hard-expansion-11",
+    "topic": "ml",
+    "subtopic": "ROC-AUC",
+    "difficulty": "hard",
+    "text": "What does ROC-AUC measure in a binary classification setting?",
+    "options": [
+      "The area under the true-positive-rate versus false-positive-rate curve across thresholds",
+      "Only the accuracy at threshold 0.5",
+      "The mean squared regression error",
+      "The number of trainable parameters"
+    ],
+    "correctIndex": 0,
+    "explanation": "ROC-AUC summarises ranking discrimination across thresholds through the ROC curve.",
+    "tags": [
+      "roc-auc"
+    ]
+  },
+  {
+    "seedKey": "ml-cnns-hard-expansion-12",
+    "topic": "ml",
+    "subtopic": "CNNs",
+    "difficulty": "hard",
+    "text": "What is a primary effect of a convolutional layer in a CNN for images?",
+    "options": [
+      "Apply learned local filters across spatial positions to detect patterns",
+      "Sort image filenames alphabetically",
+      "Guarantee rotation invariance without any design or training considerations",
+      "Convert all pixels into class labels directly"
+    ],
+    "correctIndex": 0,
+    "explanation": "Convolutional filters learn local patterns and are reused spatially; invariance depends on architecture, data and training.",
+    "tags": [
+      "cnns"
+    ]
+  },
+  {
+    "seedKey": "ml-dimensionality-reduction-hard-expansion-13",
+    "topic": "ml",
+    "subtopic": "Dimensionality reduction",
+    "difficulty": "hard",
+    "text": "In principal component analysis (PCA), the first principal component is the direction that, under standard PCA, does what?",
+    "options": [
+      "Maximises variance of the projected data",
+      "Maximises the number of class labels",
+      "Minimises the number of records",
+      "Guarantees the features become independent in every distribution"
+    ],
+    "correctIndex": 0,
+    "explanation": "PCA finds orthogonal directions of maximum variance in centred data; it does not guarantee statistical independence generally.",
+    "tags": [
+      "dimensionality-reduction"
+    ]
+  },
+  {
+    "seedKey": "ml-evaluation-hard-expansion-14",
+    "topic": "ml",
+    "subtopic": "Evaluation",
+    "difficulty": "hard",
+    "text": "When choosing a classification threshold for a real product, why should a team consider the relative cost of false positives and false negatives?",
+    "options": [
+      "Different threshold choices trade precision against recall, and error costs vary by application",
+      "The threshold has no effect on predictions",
+      "The test set can be used repeatedly until the score looks best",
+      "False positives and false negatives are always equally harmful"
+    ],
+    "correctIndex": 0,
+    "explanation": "Threshold choice changes the confusion matrix; selecting it should reflect application costs and usually be based on validation data.",
+    "tags": [
+      "evaluation"
+    ]
+  }
+]

@@ -1,4 +1,5 @@
 ﻿import SkillProfile from '../models/SkillProfile.js';
+import { listSkillCatalog } from '../services/skillCatalogService.js';
 
 function toPublicProfile(profile) {
     if (!profile) return null;
@@ -11,6 +12,7 @@ function toPublicProfile(profile) {
             name: skill.name,
             category: skill.category,
             proficiency: skill.proficiency,
+            level: skill.level ?? null,
             yearsExperience: skill.yearsExperience
         })),
         createdAt: profile.createdAt,
@@ -26,9 +28,7 @@ export async function getSkillProfile(req, res, next) {
 
         return res.status(200).json({
             ok: true,
-            data: {
-                profile: toPublicProfile(profile)
-            }
+            data: { profile: toPublicProfile(profile) }
         });
     } catch (error) {
         next(error);
@@ -37,7 +37,6 @@ export async function getSkillProfile(req, res, next) {
 
 export async function saveSkillProfile(req, res, next) {
     try {
-        // Ownership is derived from the verified access token, never the body.
         const profile = await SkillProfile.findOneAndUpdate(
             { userId: req.auth.userId },
             {
@@ -56,9 +55,19 @@ export async function saveSkillProfile(req, res, next) {
 
         return res.status(200).json({
             ok: true,
-            data: {
-                profile: toPublicProfile(profile)
-            }
+            data: { profile: toPublicProfile(profile) }
+        });
+    } catch (error) {
+        next(error);
+    }
+}
+
+export async function getCatalog(req, res, next) {
+    try {
+        const skills = await listSkillCatalog();
+        return res.status(200).json({
+            ok: true,
+            data: { skills }
         });
     } catch (error) {
         next(error);
